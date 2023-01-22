@@ -13,12 +13,13 @@
 
 .cards {
     background: rgb(105, 144, 228);
-    width: 1080px;
-    height: 1150px;
+    width: 1020px;
+    height: 1350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 25px;
+    padding: 20px;
+    padding-bottom: 15px;
     border-radius: 18px;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .imagen{
-    height: 90%;
+    height: 80%;
     border-radius: 12%;
 }
 .semestre{

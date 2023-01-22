@@ -10,6 +10,11 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { PrivateTasksComponent } from './components/private-tasks/private-tasks.component';
 import { AuthGuard } from "./auth.guard";
 import { TokenInterceptorService } from "./services/token-interceptor.service";
+import { PrimerComponent } from './components/primer/primer.component';
+import { SegundoComponent } from './components/segundo/segundo.component';
+import { TerceroComponent } from './components/tercero/tercero.component';
+import { CuartoComponent } from './components/cuarto/cuarto.component';
+import { QuintoComponent } from './components/quinto/quinto.component';
 
 
 @NgModule({
@@ -18,7 +23,12 @@ import { TokenInterceptorService } from "./services/token-interceptor.service";
     SignupComponent,
     SigninComponent,
     TasksComponent,
-    PrivateTasksComponent
+    PrivateTasksComponent,
+    PrimerComponent,
+    SegundoComponent,
+    TerceroComponent,
+    CuartoComponent,
+    QuintoComponent
   ],
   imports: [
     BrowserModule,
