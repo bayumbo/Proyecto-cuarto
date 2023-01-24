@@ -6,6 +6,7 @@ import { PrivateTasksComponent } from './components/private-tasks/private-tasks.
 import { SignupComponent } from "./components/signup/signup.component";
 import { SigninComponent } from "./components/signin/signin.component";
 import { PrimerComponent } from "./components/primer/primer.component";
+import { AnalisisComponent } from "./components/primer/analisis/analisis.component";
 import { SegundoComponent } from "./components/segundo/segundo.component";
 import { TerceroComponent } from "./components/tercero/tercero.component";
 import { CuartoComponent } from "./components/cuarto/cuarto.component";
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'quinto',
     component: QuintoComponent
+  },
+  {
+    path: 'analisis',
+    component: AnalisisComponent
   },
 ];
 

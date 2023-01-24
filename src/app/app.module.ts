@@ -15,6 +15,7 @@ import { SegundoComponent } from './components/segundo/segundo.component';
 import { TerceroComponent } from './components/tercero/tercero.component';
 import { CuartoComponent } from './components/cuarto/cuarto.component';
 import { QuintoComponent } from './components/quinto/quinto.component';
+import { AnalisisComponent } from './components/primer/analisis/analisis.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { QuintoComponent } from './components/quinto/quinto.component';
     SegundoComponent,
     TerceroComponent,
     CuartoComponent,
-    QuintoComponent
+    QuintoComponent,
+    AnalisisComponent
   ],
   imports: [
     BrowserModule,
