@@ -1,0 +1,19 @@
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    border-width: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    margin-top: 30px;
+}
+
+.col{
+    text-align: center;
+}
+
+h5{
+    margin-top: 10px;
+    color: aliceblue;
+}

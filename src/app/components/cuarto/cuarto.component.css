@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+        background:  rgb(45, 18, 107);
+    
 }
 
 .titulo {
@@ -13,14 +16,11 @@
 
 .cards {
     background: rgb(105, 144, 228);
-    width: 1020px;
-    height: 1350px;
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    padding-bottom: 15px;
-    border-radius: 18px;
+  
 }
 
 .card {    
