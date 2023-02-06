@@ -12,4 +12,16 @@ color:aliceblue;
 button{
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.1); 
+}
+h4{
+    margin: 10px;
 }

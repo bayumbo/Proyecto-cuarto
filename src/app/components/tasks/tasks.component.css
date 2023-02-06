@@ -17,3 +17,11 @@ h5{
     margin-top: 10px;
     color: aliceblue;
 }
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.1); 
+}
