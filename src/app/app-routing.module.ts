@@ -36,8 +36,8 @@ import { ProyectosSoftwareComponent } from "./components/quinto/proyectos-softwa
 import { AuthGuard } from "./auth.guard";
 const routes: Routes = [
   {
-    path: ' ',
-    redirectTo: 'tasks',
+    path: '',
+    redirectTo: '/tasks',
     pathMatch: 'full'
   },
   {

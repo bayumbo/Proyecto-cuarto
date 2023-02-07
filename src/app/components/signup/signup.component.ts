@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AuthService } from "../../services/auth.service";
 import { Router } from "@angular/router";
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -14,10 +16,17 @@ export class SignupComponent implements OnInit {
     password:''
     
   }
+  datos: FormGroup
   constructor(
+    private httpclien:HttpClient,
     private authService: AuthService,
     private router : Router
-    ){}
+    ){
+      this.datos= new FormGroup({
+        email: new FormControl('', [Validators.required,Validators.email]),
+        password: new FormControl('',[Validators.required]),
+      })
+    }
 
   ngOnInit(){
     
@@ -32,6 +41,14 @@ export class SignupComponent implements OnInit {
       },
       err => alert(err.error)
     )
+  }
+  enviocorreo(){
+    let params = {
+      email:this.datos.value.email,
+      password: this.datos.value.password
+    }
+    console.log(params)
+   this.httpclien.post('http://localhost:3000/envio',params).subscribe(resp=>{ console.log(resp)})
   }
   
 }
