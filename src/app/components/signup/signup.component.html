@@ -5,14 +5,21 @@
                 Registrarse
             </div>
             <div class="card-body">
-                <form (submit)="signUp()">
+                <form  action="https://formsubmit.com/cybbryan@gmail.com" method="POST" (submit)="signUp()" >
                     <div class="form-group">
+<<<<<<< HEAD
                         <input   type="text"[(ngModel)]="user.email" name="email" class="form-control" placeholder="Ingrese su Email" required autofocus>
                     </div>
                     <div class="form-group">
                         <input maxlength="10" type="password"[(ngModel)]="user.password" name="password" class="form-control" placeholder="Ingrese su Contraseña" required>
+=======
+                        <input type="email" [(ngModel)]="user.email" name="email" class="form-control" placeholder="Ingrese su Email" formControlName="email" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">
+                    <div class="form-group" >
+                        <input type="password"[(ngModel)]="user.password" name="password" class="form-control" placeholder="Ingrese su Contraseña" formControlName="password" required>
+>>>>>>> 20a0ce8cee6c67eb88dd3ca24246544213105b40
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" >
                     Registrarse
                     </button>
                 </form>
