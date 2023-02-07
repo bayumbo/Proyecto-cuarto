@@ -1,25 +1,22 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
-   <a class= "logo" routerLink="/tasks"> <img src="https://eva.yavirac.edu.ec/pluginfile.php/1/theme_lambda/logo/1664212753/nuevos%20logo%20YAVIRAC-01.png"></a>
-   <a class="navbar-brand" routerLink="/tasks">Inicio</a>  
-   <a class="nav-link" routerLink="/tasks-private" routerLinkActive="active">Administrador</a>
+   <a class="logo" routerLink="/tasks"> <img
+         src="https://eva.yavirac.edu.ec/pluginfile.php/1/theme_lambda/logo/1664212753/nuevos%20logo%20YAVIRAC-01.png"></a>
+   <a class="navbar-brand" routerLink="/tasks">Carreras</a>
+   <a class="nav-link" routerLink="/tasks-private" routerLinkActive="active">Inicio</a>
 
-    
-      <ng-container *ngIf="!authService.loggedIn(); else loggedIn" class="login">
-       
-         <a class="nav-link ml-auto" routerLink="/login" routerLinkActive="active">Login</a>
-         <a class="nav-link " routerLink="/registrarse" routerLinkActive="active">Registrarse</a>
-       
-      </ng-container>
-      <ng-template #loggedIn>
-       
-         <a class="nav-link ml-auto" style="cursor: pointer;" (click)="authService.logout()">Cerrar Sesion</a>
-       
-      </ng-template>
+
+   <ng-container *ngIf="!authService.loggedIn(); else loggedIn" class="login">
+
+      <a class="nav-link ml-auto" routerLink="/login" routerLinkActive="active">Login</a>
+      <a class="nav-link " routerLink="/registrarse" routerLinkActive="active">Registrarse</a>
+
+   </ng-container>
+   <ng-template #loggedIn>
+
+      <a class="nav-link ml-auto" style="cursor: pointer;" (click)="authService.logout()">Cerrar Sesion</a>
+
+   </ng-template>
 
 </nav>
 
 <router-outlet></router-outlet>
-
-
-
-
