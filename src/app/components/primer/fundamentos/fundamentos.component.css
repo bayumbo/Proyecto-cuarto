@@ -13,6 +13,8 @@ div{
         margin-top: 10px;
         margin-bottom: 20px;
         margin-left: 20px;
+        background-color: black;
+        color: aliceblue;
     }
     
     .zoom {

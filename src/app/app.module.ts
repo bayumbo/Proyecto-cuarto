@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { SignupComponent } from './components/signup/signup.component';
@@ -74,12 +75,14 @@ import { EmprendimientoComponent } from './components/cuarto/emprendimiento/empr
     ArquitecturaSoftwareComponent,
     CalidadSoftwareComponent,
     ProyectosSoftwareComponent,
-    EmprendimientoComponent
+    EmprendimientoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [
