@@ -1,0 +1,53 @@
+.card-body {
+    width: 950px;
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(149, 159, 202);
+    margin: .5rem auto;
+    padding: 8px;
+}
+
+.card {
+    background: rgb(204, 223, 224);
+    margin: 50px;
+}
+
+.pdf{
+    width: 100%;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+h4 {
+    color: #4b6cb7;
+    font-weight: 500;
+    text-align: center;
+    font-size: 23px;
+    margin: 0.5rem auto;
+}
+
+.titulo{
+    color: #c5cee2;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    margin: 0.5rem auto;
+}
