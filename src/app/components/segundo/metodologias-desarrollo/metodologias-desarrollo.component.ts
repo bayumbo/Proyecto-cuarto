@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./metodologias-desarrollo.component.css']
 })
 export class MetodologiasDesarrolloComponent {
-
+  public contador28:number =0;
+  public counter28(){
+    this.contador28++;
+  }
+  public contador29:number =0;
+  public counter29(){
+    this.contador29++;
+  }
 }

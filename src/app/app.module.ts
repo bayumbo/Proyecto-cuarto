@@ -83,7 +83,8 @@ import { EmprendimientoComponent } from './components/cuarto/emprendimiento/empr
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [
     AuthGuard,
@@ -92,6 +93,7 @@ import { EmprendimientoComponent } from './components/cuarto/emprendimiento/empr
       useClass: TokenInterceptorService,
       multi: true
     }
+    
   ],
   bootstrap: [AppComponent],
   

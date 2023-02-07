@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./base-datos-relacional.component.css']
 })
 export class BaseDatosRelacionalComponent {
-
+  public contador24:number =0;
+  public counter24(){
+    this.contador24++;
+  }
+  public contador25:number =0;
+  public counter25(){
+    this.contador25++;
+  }
 }

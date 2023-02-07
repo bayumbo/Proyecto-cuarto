@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./tecnicas-comunicacion.component.css']
 })
 export class TecnicasComunicacionComponent {
-
+  public contador36:number =0;
+  public counter36(){
+    this.contador36++;
+  }
+  public contador37:number =0;
+  public counter37(){
+    this.contador37++;
+  }
 }
